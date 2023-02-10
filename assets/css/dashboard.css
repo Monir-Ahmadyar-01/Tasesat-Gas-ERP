@@ -1,0 +1,94 @@
+/*! HTML5 Gas release company managment system v1.0.0 | mohammadireza29@gmail.com ---   0779538428 --- 0781500616*/
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Monir AhmadYar, Masih Ahmadyar,
+ * Reza Mohammadi.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+.tool_box {
+  height: 160px;
+  display: relative;
+  overflow: hidden;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.color-circle {
+  border-radius: 50%;
+  background-color: dodgerblue;
+  transition: ease-in-out 500ms all;
+  width: 70px;
+  height: 70px;
+}
+.tool_box:hover .color-circle {
+  transition: ease-in-out 540ms all;
+  width: 100%;
+  height: 100%;
+  border-radius: 0%;
+}
+.tool_box:hover .title {
+  transition: all ease 600ms;
+  color: white;
+  bottom: 20px;
+  cursor: pointer;
+}
+.teachers .color-circle {
+  background-color: orange;
+}
+.color-box {
+  border-radius: 5px;
+  background-color: white;
+  padding: 0 !important;
+  overflow: hidden !important;
+  width: 100%;
+  height: 100%;
+  border: 3px solid dodgerblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 1px; */
+}
+.color-box .title {
+  transition: all ease 600ms;
+  position: absolute;
+  bottom: 10px;
+}
+.color-box .img {
+  position: absolute;
+}
+.section {
+  margin-top: 20px;
+  width: 100%;
+}
+.personnel .color-box {
+  border-color: green;
+}
+.personnel .color-circle {
+  background-color: green;
+}
+.time_table .color-box {
+  border-color: tomato;
+}
+.time_table .color-circle {
+  background-color: tomato;
+}
+.learn_prog .color-box {
+  border-color: turquoise;
+}
+.learn_prog .color-circle {
+  background-color: turquoise;
+}
+.teach_plan .color-box {
+  border-color: crimson;
+}
+.teach_plan .color-circle {
+  background-color: crimson;
+}
+.row-man {
+  margin-bottom: 70px;
+  width: 100%;
+  height: 100%;
+}

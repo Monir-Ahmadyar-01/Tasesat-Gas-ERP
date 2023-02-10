@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ورود به سیستم</title>
+  <!-- style -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/login.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <!-- script -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/append.js"></script>
+</head>
+<body id="body">
+<div class="all-web">
+  <div class="login-box card col-10 col-sm-10 col-md-4 col-lg-5 col-xl-3" style=" overflow: hidden;">
+     
+      <center><img class="loginlogo" src="assets/img/loginlogo.png" width="200px" alt="logo"></center>
+        <h4 class="mb-5" style="text-align: center; color: #fff; "> ورود به سیستم به عنوان مدیر مرکزی </h4>
+     
+    <div class="card-bdy cboy-man">
+      <form action="home.html" class="form-login" >
+        <div class="input-group">
+          <input type="text" id="username" placeholder="نام کاربری" name="username"
+            class="  mb-4 username form-control">
+        </div>
+        <!-- ورودی دارای نوعیت رمز  -->
+        <div class="input-group">
+          <input type="password" id="password" placeholder="رمز ورود" name="password" class=" mb-4 password form-control">
+          <!--  دکمه برای نشان دادن رمز وردوی    event onclick() جاوا اسکریپت -->
+          <span class="passShow fa fa-eye" onclick="passShow()"></span>
+        </div>
+          <div id="alr_message">
+          </div>
+          <!-- <a type="button" href="#" onclick="loginValidate()" value="ورود" name="login" id="login" class="login btn col-5 rounded-pill ripEffect">ورود</a> -->
+            <button type="button" onclick="loginValidate()" value="ورود" name="login" id="login"
+              class="login btn col-5 rounded-pill">
+              <span class="ripbox"></span>
+              ورود</button>
+      </form>
+     <div class="go_to_branch_admin">
+       <span class="fa fa-angle-left"></span>
+    <span class="txt">
+      ورود به عنوان ادمین شعبات
+    </span>
+     </div>
+  </div>
+</div>
+ <script src="assets/js/script.js"></script>
+  <script >
+function loginValidate(){
+  var ps = document.getElementById("password").value;
+  var us = document.getElementById('username').value;
+   if(us == '' || ps == ''){
+    $('#alr_message').html('<div class="alert alert-danger alert-dismissible fade show" role="alert">لطفا نام کاربری و رمز ورودی را کامل وارد نماید <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>',1000);
+  } else{
+  window.location.href = 'home.html';
+  }
+}
+// کود جاوا اسکریپت
+     function passShow(){
+  var x = document.getElementById
+  ("password");
+  if(x.type === "password"){
+    x.type = "text";
+  } else{
+    x.type = "password";
+  }
+}
+  </script>
+  <script>
+       $('.passShow').on('click',()=>{
+       $('.passShow').toggleClass('fa-eye-slash','fa-eye')
+   });
+
+   $('button').click(function (evt) {
+    //  alert('j')
+     $('.ripbox').removeClass('ripple');
+
+     let coordX = evt.pageX - $(this).offset().left;
+     let coordY = evt.pageY- $(this).offset().top;
+
+    $('.ripbox')
+    .addClass('ripple')
+    .css({top: `${coordY}px`,left: `${coordX}px`});
+
+   });
+  </script>
+</body>
+</html>

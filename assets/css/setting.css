@@ -1,0 +1,240 @@
+input:active,
+input:focus {
+  outline: none;
+}
+.section {
+  margin-top: 70px;
+}
+.setting_nav {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 55px;
+  background-color: rgb(51, 103, 214);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search_nav {
+  padding: 10px;
+  background-color: rgb(40, 80, 167);
+  border: none;
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  color: white;
+}
+.search_nav::placeholder {
+  color: rgb(224, 224, 224);
+}
+.search_nav:focus {
+  color: white;
+}
+.search_nav:blur {
+  color: white;
+}
+.search_nav:focus .setting_nav form span {
+  color: white;
+}
+.setting_nav form {
+  width: 45%;
+}
+.setting_nav form span {
+  color: rgb(224, 224, 224);
+  position: absolute;
+  top: 20px;
+  left: 27.9%;
+  font-size: 20px;
+}
+.setting-card {
+  width: 100%;
+  background-color: white;
+  color: balck;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.226);
+  margin: 20px 20px;
+}
+ul li {
+  border-bottom: none;
+}
+ul li img {
+  float: right;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+.setting-sidebar {
+  position: fixed;
+  right: 10px !important;
+  padding: 10px;
+  float: right;
+  width: 20%;
+  /* border: 1px solid black; */
+}
+.setting-sidebar ul li {
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  height: 40px;
+}
+.setting-sidebar ul li:hover {
+  background-color: rgba(193, 229, 252, 0.644);
+}
+.setting-sidebar ul li img {
+  width: 23px;
+}
+.row_setting {
+  display: flex;
+  justify-content: center;
+}
+.setting-section {
+  /* margin-right: 8%; */
+  /* margin: 0 auto; */
+  width: 45%;
+  /* background-color: aliceblue; */
+}
+.setting-section .title {
+  color: rgb(56, 56, 56);
+  font-size: medium;
+}
+.setting-card {
+  border-radius: 4px;
+  margin: 10px 0;
+  width: 100%;
+  height: auto !important;
+  padding: 15px;
+  box-shadow: 3px 1px 3px 0px rgb(0, 0, 0, 16%);
+}
+@media (max-width: 768px) {
+  .fa-bars {
+    display: block !important;
+  }
+  .row {
+    padding: 10px;
+  }
+  .setting-sidebar {
+    width: 260px;
+    height: 100%;
+    right: -100%;
+    padding: 50;
+    position: fixed;
+    top: 0px;
+    z-index: 1003;
+    background-color: white;
+  }
+  .setting-section {
+    width: 100%;
+    margin: 1px;
+  }
+  .fa-search {
+    right: 64px;
+    cursor: pointer;
+  }
+  h6 {
+    display: none;
+  }
+  .search_nav {
+    display: none;
+  }
+}
+.home {
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: rgb(219, 219, 219);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+/* making style for material inp */
+input {
+  padding: 5px;
+  width: 135px;
+  background-color: rgb(241, 243, 244);
+  border: none;
+  border-bottom: 2px solid rgb(241, 243, 244);
+  transition: all 600ms;
+}
+input:focus {
+  border-bottom: 2px solid rgb(2, 76, 150);
+}
+input.btn {
+  border: none;
+}
+.material_inp {
+  padding: 5px;
+  width: 195px;
+  background-color: rgb(241, 243, 244);
+  border: none;
+  border-bottom: 2px solid rgb(241, 243, 244);
+  transition: all 600ms;
+}
+
+.material_inp:focus {
+  border-bottom: 2px solid rgb(2, 76, 150);
+}
+.img_div {
+  height: 500px;
+}
+.img_div img {
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+  width: 105px;
+  float: right;
+  margin: 4px;
+}
+.img_div img:active {
+  border: 2px solid dodgerblue;
+}
+a:visited {
+  color: dodgerblue;
+}
+thead.password-security-table tr td {
+  background-color: white !important;
+  text-align: right;
+  color: black;
+}
+td {
+  /* border: 1px solid black; */
+  margin-right: 10px;
+  /* width: 100%; */
+}
+th {
+  background-color: white;
+  color: black;
+}
+table tbody tr td input {
+  width: 97%;
+}
+table tbody tr td input[type="button"] {
+  width: 80%;
+}
+.fa-upload {
+  padding: 20px;
+  font-size: 20px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.226);
+  /* border: 1px solid black; */
+  cursor: pointer;
+}
+input.inp_switch[type="ckeckbox"] {
+  float: left;
+  background-color: blue;
+  position: relative !important;
+  width: 60px !important;
+  height: 40px;
+  -webkit-appearance: none !important;
+}
+/* for responsive menu */
+.fa-bars {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+}
+.back-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.281);
+}

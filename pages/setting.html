@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> تنظیمات</title>
+  <!-- style -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/css/bootstrap-rtl.min.css" />
+  <link rel="stylesheet" href="../assets/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../assets/css/jquery-ui.css" />
+  <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../assets/css/chat.css" />
+  <link rel="stylesheet" href="../assets/css/dashboard.css" />
+  <link rel="stylesheet" href="../assets/css/setting.css" />
+  <link rel="stylesheet" href="../assets/css/responsive.css" />
+  <link rel="icon" href="../assets/img/settings_blue_96px.png" />
+  <!-- script -->
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/jquery-ui.js"></script>
+  <script src="../assets/js/popper.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/setting.js"></script>
+</head>
+        <style>
+          input[type="checkbox"] {
+            float: left;
+            position: relative;
+            -webkit-appearance: none;
+            width: 34px;
+            outline: none;
+            border: none;
+            transition: .2s;
+            box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.082);
+            cursor: pointer;
+            height: 16px;
+            background-color: rgb(189, 193, 198);
+            border-radius: 50px;
+			z-index:600;
+          }
+        
+          input:checked[type="checkbox"] {
+            background-color: #8DB9F4 !important;
+            border: none;
+          }
+        
+          input[type="checkbox"]::before {
+            content: " ";
+            background-color: rgb(26, 115, 232);
+            position: absolute;
+            width: 17px;
+            height: 17px;
+            top: 0;
+            left: 0;
+            box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.382);
+            position: absolute;
+            border-radius: 50%;
+            transition: .2s;
+            transform: scale(1.1);
+          }
+        
+          input:checked[type="checkbox"]::before {
+            left: 20px;
+          }
+        </style>
+<body id="body" date-theme="light">
+  <div class="back-bg"></div>
+  <div class="setting_nav">
+    <h6 style="float: right; position: absolute; right: 17px; color: white; text-align: right;"> تنظیمات</h6>
+    <form action="" enctype="multipart/form-data" method="post">
+  <input type="search" name="search_nav" id="search_nav" class="search_nav" placeholder="جستجو در تنظیمات">
+  <span class="fa fa-search"></span>
+  <span class="fa fa-bars"></span>
+  </form>
+  <a href="../home.html"><span class="home">
+    <img src="../assets/img/settings/home_outline_96px.png" width="25px" alt="home">
+  </span></a>
+  </div>
+  <!-- end of coding for nav for setting -->
+  <div class="section mx-auto">
+  <div class="container-fluid">
+        <div class="row row_setting" >
+          <div class="setting-sidebar">
+            <ul>
+              <!-- <h6 class="mb-5 mt-5">تنظمیات</h6> -->
+              <li><a class="link_prof" href="#"><img src="../assets/img/settings/co-nav.png" alt="st_img">شما و پروفایل تان</a></li>
+              <li><a class="password-security-list" href="#password-security"><img src="../assets/img/settings/user_shield_96px.png" alt="st_img">حریم خصوصی و امنیت </a></li>
+              <li><a class="link_theme" href="#themes"><img src="../assets/img/settings/paint_palette_208px.png" alt="st_img">
+                تنظمیات ظاهری
+              </a></li>
+              <li><a class="link_help" href="#help_section"><img src="../assets/img/settings/help_480px.png" alt="st_img">
+              کمک رسانی
+              </a></li>
+              </ul>
+          </div>
+          <div id="account" class="setting-section">
+            <h5 class="title">حساب شخصی</h5>
+            <div id="account" class="account setting-card">
+              نام حساب و تصویر پروفایل
+               <br><br>
+              <form action="" enctype="multipart/form-data" method="post">
+                <input type="text" class="name_acc material_inp" name="name_acc" placeholder="رضا محمدی" id="name_acc">
+
+                <br>
+                <br>
+                <div class="img_div">
+                    <img src="../assets/img/settings/avatars/av1.png" alt="avatar">
+                    <img src="../assets/img/settings/avatars/av2.png" alt="avatar">
+                    <img src="../assets/img/settings/avatars/av3.png" alt="avatar">
+                    <img src="../assets/img/settings/avatars/av4.png" alt="avatar">
+                    <img src="../assets/img/settings/avatars/av5.png" alt="avatar">
+                    <img src="../assets/img/settings/avatars/av3.png" alt="avatar">
+                    <img src="../assets/img/settings/avatars/av4.png" alt="avatar">
+                </div>
+              </form>
+               <br><br>
+           
+            </div>
+            <h5 class="title mt-5 mb-4"> امنیت و حریم خصوصی</h5>
+            <div id="password-security" class="password-security setting-card">
+               مدیریت امنیت و حساب کاربری
+              <br><br>
+              <form action="" enctype="multipart/form-data" method="post">
+                 <table>
+                  <thead class="password-security-table">
+                    <tr>
+                      <th> <img src="../assets/img/settings/avatars/av1.png" style="border: 2px solid dodgerblue; border-radius: 50%; margin-left: 15px;" width="35px" alt="" class="user_avatar"> <label for="name">کاربر</label></th>
+                      <th><label for="username">نام کاربری</label></th>
+                      <th><label for="password">رمز ورودی</label></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><input type="text" class="name" id="name" name="name"></td>
+                      <td><input type="text" class="username" id="username" name="username"></td>
+                      <td><input type="password" class="password" id="password" name="password"></td>
+                      <td style="width: 50px; display: flex; justify-content: center; align-items: center;"><span onclick="passShow()" style="font-size: 20px; margin-top: 10px ; cursor: pointer; color: rgb(83, 83, 83);" class="fa fa-eye"></span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                                              عملیات
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><input type="button" class="btn btn-primary" value="جزئیات" id="name" name="name"></td>
+                      <td><input type="button" class="btn btn-danger" value="حذف" id="username" name="username"></td>
+                      <td><input type="button" class="btn btn-primary"  value=" ذخیره " id="password" name="password"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+              <br><br>
+                           افزودن حساب کاربری جدید  
+                          <br><br>
+                          <form action="" enctype="multipart/form-data" method="post">
+                            <table>
+                              <thead class="password-security-table">
+                                <tr>
+                                  <th><label for="name">کاربر</label></th>
+                                  <th><label for="username">نام کاربری</label></th>
+                                  <th><label for="password">رمز ورودی</label></td>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td><input type="text" class="name" id="name" name="name"></td>
+                                  <td><input type="text" class="username" id="username" name="username"></td>
+                                  <td><input type="password" class="password_new_user" id="password_new_user" name="password_new_user"></td>
+                                  <td style="width: 50px; display: flex; justify-content: center; align-items: center;"><span onclick="passShow2()"
+                                    style="font-size: 20px; margin-top: 20px ; margin-left: 10px; cursor: pointer; color: rgb(83, 83, 83);"
+                                    class="fa fa-eye"></span></td>
+                                    <td><input style="display: none;" type="file" name="img_user" class="img_user" id="img_user">
+                                    <label for="img_user"><span class="fa fa-upload"></span></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    عملیات
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td><input type="button" class="btn btn-primary" value="جزئیات" id="name" name="name"></td>
+                                  <td><input type="button" class="btn btn-danger" value="ریست کردن" onclick="javascript:Reset();" name="reset"></td>
+                                  <td><input type="button" class="btn btn-primary" value=" ذخیره " id="save" name="save"></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </form>
+                          <br><br>
+            </div>
+            <h5 id="themes" class="title mt-5 mb-4"> تنظمیات ظاهری</h5>
+            <div class="setting-card">
+            <label for="nightmode" >فعال کردن حالت شب</label>
+            <input type="checkbox"  name="nightmode " id="darkSwitch" class="inp_switch">
+            </div>
+            <h5 id="help_section" class="title mt-5 mb-4 ">کمک رسانی</h5>
+            <div class="setting-card">
+              <h6 class="mb-4 mt-4 ">شرکت خدماتی تکنالوجی عصر پویا  با افتخار تقدیم می کند</h6>
+              <div class="imgdiv" style="width: 100%; display: flex; justify-content: center;">
+                <img src="../assets/img/logo_with_lyric.png" width="400px" class="mx-auto" alt="logo">
+              </div>
+              <p>
+                توسعه دهندگان:<br>
+                رضا محمدی ، علی بهمن ، شجاع ذکی ، منیر احمدیار ( مدیر بخش توسعه و مدیر پروژه)
+              <br>
+            <br> در صورت نیاز به کمک به شماره و ایمیل ذیل به تماس شوید<br>
+              support@asrepoya.com • <br>
+               0771838034 - 0792212900 •<br>
+               <br>
+               سیستم مدیریت تاسیسات نسخه 1.0.0
+               <br>
+               تمام حقوق مربوط به شرکت خدماتی تکنالوجی عصر پویا محفوظ است 1399 ©
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+<!--custom chart end-->
+<script >
+  $(()=>{
+    $('.home').hover(()=>{
+      $('.home img').attr('src','../assets/img/settings/home_96px.png');
+    });
+    $('.home').mouseleave(()=>{
+      $('.home img').attr('src','../assets/img/settings/home_outline_96px.png');
+    });
+  });
+       function passShow() {
+          var x = document.getElementById("password");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+       function passShow2() {
+          var x = document.getElementById("password_new_user");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+        $('.inp_switch').click(function(){
+          var text = $('label').css({ "background-color": "white" });
+          var nightmode = localStorage.setItem(1,text);
+          if($(body).attr('data-theme') == 'dark'){
+            $('.setting-card').css({ "background-color": "white" });
+           $('td').css({"background":"white"});
+             $('label').css({ "background-color": "white" });
+            $('th').css({ "background": "white","color":"black" });
+          }else{
+            $('.setting-card').css({ "background-color": "rgb(95, 99, 104)" });
+            $('label').css({ "background-color": "rgb(95, 99, 104)" });
+            $('td').css({ "background": "rgb(95, 99, 104)" });
+            $('th').css({ "background": "rgb(95, 99, 104)" });
+          }
+                  });
+</script>
+<script src="../assets/js/dark-mode-switch.min.js"></script>
+</body>
+</html>

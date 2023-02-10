@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="white" />
+  <title>GAS STATION</title>
+  <!-- style -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css" />
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/owl.carousel.css" />
+  <link rel="stylesheet" href="assets/css/persian-datepicker.css">
+  <link rel="stylesheet" href="assets/css/jquery-ui.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/sidebar.css" />
+  <!-- <link rel="stylesheet" href="assets/css/materialize.min.css" /> -->
+  <link rel="stylesheet" href="assets/css/style-responsive.css" />
+  <link rel="icon" href="assets/img/poster3_6_103034.png" />
+  <!-- end for style -->
+
+  <!-- script -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery-ui.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/owl.carousel.js"></script>
+  <script src="assets/js/persian-datepicker.js"></script>
+  <!-- <script src="assets/js/materialize.min.js"></script> -->
+  <script src="assets/js/append.js"></script>
+  <!-- end for script -->
+  <!-- start custome style   -->
+  <style>
+    .sidebar .sidebar-menu li.item:target {
+  max-height: 300px !important;
+  background-color: dodgerblue;
+}
+  </style>
+  <!-- end custome style   -->
+
+</head>
+<body id="body">
+  <!-- start for dialogs -->
+  <div style="display: none" class="bg-black"></div>
+  <div style="display: none" class="bg-white"></div>
+  <div class="user-poup-menu" id="user-poup-menu" style="z-index: 800; display: none">
+        <img src="assets/img/avatar.png" width="140px" style="margin: 0 auto; border: 2px solid lightseagreen; border-radius: 50%; margin-top: 20px;" alt="user">
+    <h5 style="padding-top: 10px; padding-right: 10px">رضا محمدی</h5>
+    <hr />
+    <ul>
+      <li id="setting-menu">
+        <a  href="pages/setting.html">تنظمیات <img src="assets/img/settings_96px.png" alt="pic" />
+        </a>
+      </li>
+      <li id="setting-menu">
+        <a href="about.html" target="frame-man">درباره ما<img src="assets/img/info_96px.png" alt="pic" /></a>
+      </li>
+      <li class="logout-btn" id="setting-menu" style="border-bottom: none">
+        <a class="btn btn_logout btn-info rounded text-light d-block">خروج از سیستم</a>
+      </li>
+    </ul>
+  </div>
+  <span class="badge badge-pill badge-danger budget">7</span>
+  <span class="badge badge-pill badge-danger budget_message">20</span>
+    <div class="noification_div">
+      <p >شما 7 اعلام جدید دارید</p>
+      <hr>
+      <ul>
+        <li>فروشات بالونی از سب استیشن نمبر 2</li>
+        <li>فروشات بالونی از سب استیشن نمبر 2</li>
+        <li>فروشات بالونی از سب استیشن نمبر 2</li>
+        <li>فروشات بالونی از سب استیشن نمبر 2</li>
+        <li>فروشات بالونی از سب استیشن نمبر 2</li>
+        <li>فروشات بالونی از سب استیشن نمبر 2</li>
+      </ul>
+    </div>
+<!------------------------- end Dialogs --------------------------->
+
+  <nav class="navbar navbar-expand-lg nav-man">
+    <div style="position: absolute; left: 0px ; display: flex; justify-content: space-evenly;"  class="nav-icons">
+      <a href="messenger.html" target="frame-man">
+        <div class="cir_ico Messenger" style="cursor: pointer; display: flex; justify-content: center; align-items: center;">
+          <img src="assets/img/facebook_messenger_60px.png" width="20px" alt="noification"></div>
+      </a>
+      <div class="cir_ico noification" style="cursor: pointer; display: flex; justify-content: center; align-items: center;">
+        <img src="assets/img/notification_48px.png" width="20px" alt="noification"></div>
+      <div  style="margin-left: 1px; margin-top:4px ; border-radius: 100%; height: 46px; width: 46px; "><img width="30px" style=" margin-top: 5px;" class="user-pic" id="user-pic" src="assets/img/male_user_96px.png" alt="img" />
+      </div>
+    </div>
+    <div style="float: right !important;" class="right-menus">
+      <div class="sidebar-toggle-box">
+        <img src="assets/img/menu_50px.png" width="23px" style="margin-right: 20px;" class=" icon-reorder " alt="menu">
+      </div>
+      <a class="nav-icon" data-toggle="tooltip" title="گزارشات " href="#">
+        <img width="30px"  src="assets/img/report_black.png" >
+      </a>
+      <a  id="currency_exchange_btn" class="nav-icon" data-toggle="tooltip" title="نسخه پشتیبان  " href="#">
+        <img width="30px" src="assets/img/graduation_cap_480px.png" >
+      </a>
+    </div>
+    <div style="width: 400px;" class="mx-auto co-brand">
+      <div  style="float:right;overflow: hidden; border:3px solid white; border:2px solid #6150ce; background-color: white; width:40px; height:40px; border-radius: 100%;;" >
+        <img style="width:100%; height:100%;"  src="assets/img/poster3_6_103034.png" alt="">
+      </div>
+      
+      <h6 class="co-band-text" style="float:right; margin-right:10px !important; margin-top:12px; ">  تاسیسات نفت و گاز عصر پویا </h6>
+    </div>
+  </nav>
+  <section id="container">
+          <!--sidebar start-->
+          <aside>
+            <div id="sidebar" class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu">
+                <li class="active">
+                  <a class="" href="dashboard.html" target="frame-man">
+                   <img src="assets/img/imac_64px.png" alt="Home">
+                    <span class="text">صفحه اصلی</span>
+                  </a>
+                </li>
+                <li class="sub-menu">
+                  <a href="javascript:;" class="">
+                  <img src="assets/img/oil_tanker_64px.png" alt="Home">
+                    <span class="arrow"></span>
+                    <span class="text">فروش موتری </span>
+                  </a>
+                  <ul class="sub">
+                    <li >                      
+                      <a class="d-btn" data-open="open" href="#"  ><i class="fa fa-angle-left d_ico"></i>پرداختی ها  </a>
+                    <ul class="sub-sub">
+                      <li><a href="#">پرداختت مشتری موتری</a></li>
+                      <li><a href="#">پرداختت فروشنده موتری</a></li>
+                      <li><a href="#">پرداختت  موتری به تاسیسات</a></li>
+                    </ul>
+                    </li>
+                    <li >                      
+                      <a class="d-btn" data-open="open" href="#"  ><i class="fa fa-angle-left d_ico"></i>  فروشات موتری</a>
+                    <ul class="sub-sub">
+                      <li><a href="#">انتقال موتری</a></li>
+                      <li><a href="#">فروش به مشتری</a></li>
+                      <li><a href="#">تسلیمی بالون از مشتری </a></li>
+                      <li><a href="#">تسلیمی بالون به تاسیسات </a></li>
+                    </ul>
+                    </li>
+                    <li><a class="" href="general.html">درج فروشنده موتری</a></li>
+                    <li><a class="" href="buttons.html">لیست  طلبات</a></li>
+                    <li><a class="" href="widget.html">راه پور عمومی </a></li>
+                    <li><a class="" href="slider.html">درج تهیه کننده ها</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu">
+                  <a href="javascript:;" class="">
+                  <img src="assets/img/money_pound_512px.png" alt="Home">
+                    <span class="arrow"></span>
+                    <span class="text">عناصر اصلی </span>
+                  </a>
+                  <ul class="sub">
+                    <li><a class="" href="general.html">فروش پرچون </a></li>
+                    <li><a class="" href="buttons.html"> فروش به مشتری</a></li>
+                    <li>
+                      <a class="d-btn" data-open="open" href="#"><i class="fa fa-angle-left d_ico"></i> پرداختی ها</a>
+                      <ul class="sub-sub">
+                        <li><a href="#">پرداخت مشتری</a></li>
+                        <li><a href="#">پرداخت موتری</a></li>
+                      </ul>
+                    
+                    </li><li>
+                      <a class="d-btn" data-open="open" href="#"><i class="fa fa-angle-left d_ico"></i> انتقالات پول</a>
+                      <ul class="sub-sub">
+                        <li><a href="#">انتقال  پول</a></li>
+                        <li><a href="#">انتقال به مرکز</a></li>
+                      </ul>                    
+                    </li>
+                    <li><a class="" href="widget.html"> ترانسفری</a></li>
+                    <li><a class="" href="slider.html">تسلیمی  گاز</a></li>
+
+                  </ul>
+                </li>
+                <li class="sub-menu">
+                  <a href="javascript:;" class="">
+                    <img src="assets/img/expenese.png" alt="Home">
+                    <span class="text">مصارف </span>
+                    <span class="arrow"></span>
+                  </a>
+                  <ul class="sub">
+                    <li><a class="" href="grids.html">مصارف</a></li>
+                    <li><a class="" href="calendar.html">معاشات</a></li>
+                    <li><a class="" href="charts.html">اموال </a></li>
+                    <li><a class="" href="charts.html">برداشت </a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu">
+                  <a href="javascript:;" class="">
+                    <img src="assets/img/manager_64px.png" alt="Home">
+                    <span class="text">  کارفرما </span>
+                    <span class="arrow"></span>
+                  </a>
+                  <ul class="sub">
+                    <li><a class="" href="form_component.html">نوعیت حساب مصرفی</a></li>
+                    <li><a class="" href="form_wizard.html">نوعیت حساب اموال </a></li>
+                    <li>
+                      <a class="d-btn" data-open="open" href="#"><i class="fa fa-angle-left d_ico"></i> درج مشتری</a>
+                      <ul class="sub-sub">
+                        <li><a href="#">ثبت مشتری </a></li>
+                        <li><a href="#">  ثبت متشریان موتری</a></li>
+                      </ul>
+                    </li>
+                    <li><a class="" href="form_validation.html"> فرم</a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu">
+                  <a href="javascript:;" class="">
+                  <img src="assets/img/report.png" alt="Home">
+                    <span class="text"> گزارشات</span>
+                    <span class="arrow"></span>
+                  </a>
+                  <ul class="sub">
+                  <li>
+                    <a class="d-btn" data-open="open" href="#"><i class="fa fa-angle-left d_ico"></i> فروشات </a>
+                    <ul class="sub-sub">
+                      <li><a href="#">پرچون </a></li>
+                      <li><a href="#"> گزارش بر اساس بیل </a></li>
+                      <li><a href="#"> Register setteled Orders </a></li>
+                      <li><a href="#">   گزارش به اساس متشری   </a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="d-btn" data-open="open" href="#"><i class="fa fa-angle-left d_ico"></i> پایگاه داده </a>
+                    <ul class="sub-sub">
+                      <li><a href="#">لیست مشتری</a></li>
+                      <li><a href="#"> گدام </a></li>
+                      <li><a href="#">  صندوق </a></li>
+                      <li><a href="#"> صندوق بر اساس تاریخ </a></li>
+                      <li><a href="#">خزانه دار </a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="d-btn" data-open="open" href="#"><i class="fa fa-angle-left d_ico"></i> مصارف </a>
+                    <ul class="sub-sub">
+                      <li><a href="#">راه پور مصارف </a></li>
+                      <li><a href="#">  راه پور مصارف به اساس حساب</a></li>
+                      <li><a href="#">تسلیمی بالون از مشتری </a></li>
+                      <li><a href="#">تسلیمی بالون به تاسیسات </a></li>
+                      <li><a href="#"> Asset Report </a></li>
+                      <li><a href="#">معاش</a></li>
+                      <li><a href="#"> Withdraw</a></li>
+                    </ul>
+                  </li>
+                    <li><a class="" href="basic_table.html">مصارف </a></li>
+                    <li><a class="" href="basic_table.html">راه پور روز مره </a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu">
+                  <a href="javascript:;" class="">
+                    <img src="assets/img/paycheque_512px.png" alt="Home">
+                    <span class="text"> بیلانس</span>
+                    <span class="arrow"></span>
+                  </a>
+                  <ul class="sub">
+                    <li><a class="" href="blank.html">بیلانس </a></li>
+                    <li><a class="" href="blank.html">بیلانس روز مره </a></li>
+                  </ul>
+                </li>
+                <li class="sub-menu">
+                  <a href="javascript:;" class="">
+                    <img src="assets/img/summary_list_64px.png" alt="Home">
+                    <span class="text"> جمع بندی</span>
+                    <span class="arrow"></span>
+                  </a>
+                  <ul class="sub">
+                    <li><a class="" href="blank.html">صفحه خالی</a></li>
+                    <li><a class="" href="profile.html">پروفایل</a></li>
+                    <li><a class="" href="invoice.html">فاکتور</a></li>
+                    <li><a class="" href="404.html">404 Error</a></li>
+                    <li><a class="" href="500.html">500 Error</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- sidebar menu end-->
+            </div>
+          </aside>
+          <!--sidebar end-->
+  </section>
+<!-- start bottom navigatin menu -->
+  <div class="bottom-nav-menu"></div>
+<!-- End bottom navigatin menu -->
+  <iframe src="dashboard.html" id="iframe" name="frame-man" width="100%" frameborder="1">
+  </iframe>
+  <a href="#back-top" style="display: none" class="go-top"><i class="fa fa-angle-up"></i></a>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
